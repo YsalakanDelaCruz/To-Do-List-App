@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  --base-color: #fff;
+  --dark-color: #2a3443;
+  --shade-color: #5e6673;
+  --success-color: #f0f8f1;
+  --warning-color: #fbeeec;
+  --light-background: #f4f5f7;
+  --spacing: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI',
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0,0,0,0.1);
+  color: var(--dark-color);
+  font-size: 18px;
+  line-height: 1.5rem;
+}
+
+[hidden] {
+  display: none;
+}
+
+a {
+  color: var(--dark-color);
+}
+
+a:visited,
+a:active {
+  color: var(--shade-color);
+}
+
+header,
+main,
+nav {
+  padding: var(--spacing);
+}
+
+nav {
+  height: 3em;
+}
+
+header {
+  background: var(--dark-color);
+  color: var(--base-color);
+/*  background-image: url('../img/bg2.jpg');
+  background-size: 100% 200%;*/
+  background-repeat: no-repeat;
+}
+
+.container{
+    padding:10px;
+    width:380px;
+    margin:0 auto;
+    height: 640px;
+    background-color:white;
+}
+
+.list{
+    width:380px;
+    height: 350px;
+    max-height:350px;
+    background-color: #FFF;
+    overflow: auto;
+
+}
+
+.todo-item{
+    width:380px;
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.input-container{
+
+    position: absolute;
+    bottom: 0;
+}
